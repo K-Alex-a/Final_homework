@@ -10,7 +10,10 @@ string[] stringArray = { "hello", "2", "world", ":)"};
 Console.WriteLine(String.Join(" ", stringArray));
 
 int n = 3;
-Console.WriteLine(LengthArray(stringArray));
+int length = LengthArray(stringArray);
+string[] newArr = new string[length];
+Console.Write(String.Join(" ", NewArray(newArr, stringArray)));
+
 
 int LengthArray(string[] arr)
 {
@@ -20,4 +23,17 @@ int LengthArray(string[] arr)
         if (arr[i].Length <= n) count++;
     }
     return count;
+}
+
+string[] NewArray(string[] arr1, string[] arr2)
+{
+    int j = 0;
+    for (int i = 0; i < arr2.Length; i++)
+    {
+        if (arr2[i].Length <= n)
+        {
+            arr1[j] = arr2[i]; j++;
+        }
+    }
+    return arr1;
 }
