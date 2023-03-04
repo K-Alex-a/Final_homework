@@ -10,3 +10,14 @@ string[] stringArray = { "hello", "2", "world", ":)"};
 Console.WriteLine(String.Join(" ", stringArray));
 
 int n = 3;
+Console.WriteLine(LengthArray(stringArray));
+
+int LengthArray(string[] arr)
+{
+    int count = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length <= n) count++;
+    }
+    return count;
+}
