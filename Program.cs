@@ -8,3 +8,5 @@ string[] stringArray = { "hello", "2", "world", ":)"};
 //string[] stringArray = { "1234", "1567", "-2", "computer science" };
 //string[] stringArray = { "Russia", "Denmark", "Kazan"};
 Console.WriteLine(String.Join(" ", stringArray));
+
+int n = 3;
