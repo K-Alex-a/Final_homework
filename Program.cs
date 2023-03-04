@@ -32,7 +32,8 @@ string[] NewArray(string[] arr1, string[] arr2)
     {
         if (arr2[i].Length <= n)
         {
-            arr1[j] = arr2[i]; j++;
+            arr1[j] = arr2[i]; 
+            j++;
         }
     }
     return arr1;
